@@ -1,13 +1,107 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family:"Noto+Sans+KR",sans-serif ;
+  font-family: "Montserrat";
+
+
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.modal {
+  font-size: 12px;
 }
+.modal > .header {
+  width: 100%;
+  /* border-bottom: 1px solid gray; */
+  font-size: 18px;
+  /* text-align: center; */
+  padding: 15px 5px  5px 30px;
+  /* border: 1px solid red; */
+
+}
+.modal > .content {
+  /* width: 100%; */
+  padding: 10px 5px;
+ 
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+  
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: 10px;
+  top: 10px;
+  font-size: 24px;
+  background: #ffffff;
+  /* border-radius: 18px; */
+  border:none;
+  /* border: 1px solid rgb(255, 0, 0); */
+}
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  /* width: 50%; */
+  padding: 5px;
+  border-radius: 15px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.9);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+
+
+
+.map{
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(5, 0, 0, 0.4);
+
+}
+
+@media only screen and (max-width: 700px) {
+  .popup-content {
+    /* border-radius: 100px; */
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: 70%;
+    padding: 5px;
+  }
+}
+
+
+@import url( "https://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=e49611d442be90c7ec3aef4e29cc18ac");
