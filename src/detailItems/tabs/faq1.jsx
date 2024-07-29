@@ -9,7 +9,7 @@ const Faq1 = () => {
          <BoxWRapper>
             <Box1>
                 <Smallp >Name</Smallp >
-                <h3>Lorem ipsum dolor sit amet , adipisicing elit, reiciendis!</h3>
+                <h3>Lorem ipsum dolor sit amet , adipisicing elit, reiciendis </h3>
                 <Line707/>
                 <Smallp>Name</Smallp>
                 <h3>Lorem ipsum dolor sit amet , adipisicing elit, reiciendis!</h3>

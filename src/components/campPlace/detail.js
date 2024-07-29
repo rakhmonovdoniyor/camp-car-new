@@ -156,7 +156,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   flex-direction: column;
   gap: 17px;
   }

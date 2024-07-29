@@ -98,8 +98,13 @@ padding: 10px;
 export const TwoButton = styled.div`
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-evenly;
 margin-top: 50px;
+:hover{
+    color: white;
+  background-color:  ${(props) => 
+props.$btn2 ? "#006DAB" : "#FF7A00"} ;
+}
 `
 export const TwoButton1 =styled.button`
 width: 115.804px;
@@ -119,7 +124,7 @@ line-height: normal;
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
 cursor: pointer;
  
- button:hover{
+ :hover{
   color: white;
   background-color:  ${(props) => 
 props.$btn2 ? "#006DAB" : "#FF7A00"} ;
@@ -146,4 +151,9 @@ line-height: normal;
 `
 export const Threephoto =styled.div`
 display: flex;
+`
+
+export const Colum = styled.div`
+display: flex;
+flex-direction: column;
 `

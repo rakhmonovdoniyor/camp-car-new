@@ -1,6 +1,7 @@
 import React from 'react'
 import { Campcar } from '../../data/motordata';
-import { CenterDiv, Column1, Con1, Con3, Container, EndDiv, FarLIne, First, Line1, Smallp } from './tabstyle';
+import { CenterDiv, Column1, Con1, Con3, Container, EndDiv, 
+  FarLIne, First, Line1, Smallp } from './tabstyle';
 import { useParams } from 'react-router-dom';
 import MultipleSelect from './input';
 
@@ -16,7 +17,7 @@ const Premium2 = () => {
  
   return (
     <div>
-        <div>
+        <Con1>
             {
                 data.map((value, key) => {
                     return(
@@ -48,7 +49,7 @@ const Premium2 = () => {
                     )
                 })
             }
-        </div>
+        </Con1>
     </div>
   )
 }

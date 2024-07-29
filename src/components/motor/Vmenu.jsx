@@ -4,6 +4,8 @@ import {
   ButtonWrapper,
   CarWrapper,
   CardContainer,
+  Flex1,
+  Flex2,
   ImgWrapper,
   InfoTitle,
   InforWrapper,
@@ -14,32 +16,32 @@ import { Campcar } from "../../data/motordata";
 
 // import { StarWrap2 } from "../homeFilter/styled";
 
-const VMenu = () => {
-    const data = Campcar.maindata.slice(0,5);
+const VMenu = ({exportedData}) => {
+    const data = Campcar.maindata.slice(0,6);
     const dataLength = data.length;
   console.log("data:", data.length);
   return (
     <>
-      {data.map((value, key) => {
+      {exportedData.map((value, key) => {
         return (
           <CardContainer key={key} $Vmenu>
             <ImgWrapper $Vmenu>
-              <img src={value.car.photo} alt="car-photo" width={250} />
+              <img src={value.car.photo} alt="car-photo" width={300} />
             </ImgWrapper>
             <InforWrapper $Vmenu>
               <InfoTitle>
-                <div>
+                <Flex1>
                   <h1>{value.car.name || "no data"}</h1>
                   <p>{value.car.company || "no data"}</p>
-                </div>
-                <div>
+                </Flex1>
+                <Flex2>
                   <h2>{value.car.cost || "no data"}</h2>
                   <StarText>
                   <h2>5.3</h2>
                   <img src={star} alt="startr" />
                   </StarText>
                   
-                </div>
+                </Flex2>
               </InfoTitle>
               <ButtonWrapper $Vmenu>
                 <Button $Vmenu>Order</Button>

@@ -87,7 +87,7 @@ export const Img = styled.img.attrs((props) => ({
 }))`
   
   height: ${(props) =>
-    props.$reimg ? "150px" : props.$cmpinfo ? "none" : "200px"};
+    props.$reimg ? "100px" : props.$cmpinfo ? "none" : "150px"};
   width: ${(props) =>
     props.$im11 ||
     props.$im12 ||
@@ -133,13 +133,14 @@ export const MulticarDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* border: 1px solid red; */
   /* padding: 0 100px; */
   
 `;
 export const ImageGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 30px;
+  gap: 10px;
  
   /* padding: 100px; */
   /* max-width: 1200px; */
@@ -152,7 +153,7 @@ export const ImageGrid = styled.div`
         : "repeat(4, 1fr)"}; 
   }
   @media (max-width: 500px) {
-    gap: 40px;
+    gap: 10px;
   }
   
 `;

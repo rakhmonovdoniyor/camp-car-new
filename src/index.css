@@ -16,31 +16,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
 .modal {
   font-size: 12px;
+  border-radius: 10px;
 }
 .modal > .header {
   width: 100%;
   /* border-bottom: 1px solid gray; */
   font-size: 18px;
   /* text-align: center; */
-  padding: 15px 5px  5px 30px;
-  /* border: 1px solid red; */
+  align-items: center;
+  padding: 5px;
 
+}
+.content{
+  padding:100px;
+  background-color: rgb(106, 113, 123);
 }
 .modal > .content {
   /* width: 100%; */
   padding: 10px 5px;
- 
 }
 .modal > .actions {
   width: 100%;
   padding: 10px 5px;
   margin: auto;
   text-align: center;
-  
 }
 .modal > .close {
   cursor: pointer;
@@ -52,9 +53,8 @@
   top: 10px;
   font-size: 24px;
   background: #ffffff;
-  /* border-radius: 18px; */
-  border:none;
-  /* border: 1px solid rgb(255, 0, 0); */
+  border-radius: 18px;
+  border: 1px solid #cfcece;
 }
 
 .popup-content {
@@ -62,7 +62,6 @@
   background: rgb(255, 255, 255);
   /* width: 50%; */
   padding: 5px;
-  border-radius: 15px;
 }
 .popup-arrow {
   color: rgb(255, 255, 255);
@@ -79,6 +78,10 @@
   background: transparent;
 }
 
+/* nextpopup */
+
+
+
 
 
 
@@ -91,7 +94,10 @@
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(5, 0, 0, 0.4);
 
-}
+  
+    }
+
+
 
 @media only screen and (max-width: 700px) {
   .popup-content {
@@ -101,7 +107,9 @@
     width: 70%;
     padding: 5px;
   }
+  
 }
+
 
 
 @import url( "https://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=e49611d442be90c7ec3aef4e29cc18ac");

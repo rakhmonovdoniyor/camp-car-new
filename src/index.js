@@ -19,6 +19,12 @@ import CampingMenu from './components/campPlace/details';
 import Campinginfo from './components/campPlace/newdetail';
 import MUlti from './components/campPlace/ulti';
 import CampingPlaceInfoComponent from './components/campPlace/details';
+import Motodetail from './detailItems/motodetail';
+import Register from './Signin/register';
+import UsedDetail from './detailItems/useddetail';
+import TuningDetail from './detailItems/tuningdetail';
+// import { Register } from './Signin/register';
+// import CreateAccountComponent from './Signin/create';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,9 +39,12 @@ root.render(
     <Route path='/tuning' element={<TuningPage/> } />
     <Route path='/used-car' element={<UsedCarPage/> } />
     <Route path='/camping-place' element={<CampingPlace/> } />
-    <Route path='/motor/:id' element = {<Detail/>}/>
+    <Route path='/motor/:id' element = {<Motodetail/>}/>
     <Route path='/caravan/:id' element = {<DetailCaravan/>}/>
+    <Route path='/used-car/:id' element = {<UsedDetail/>}/>
+    <Route path='/tuning/:id' element = {<TuningDetail/>}/>
     <Route path='/camping-place/:id' element = {<CampingPlaceInfoComponent/>}/>
+    <Route path='/createaccount' element ={<Register/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>

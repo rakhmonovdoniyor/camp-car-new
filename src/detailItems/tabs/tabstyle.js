@@ -188,9 +188,20 @@ justify-content: center;
 
 `
 export const KartaRasm =styled.div`
-width: 607px;
-height: 298px;
-flex-shrink: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 522px;
+margin-top: 50px;
+margin-bottom: 80px;
+@media only screen and (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 322px;
+    /* padding-left: 100px; */
+  }
 `
 
 export const InputTwo =styled.div`
@@ -225,6 +236,13 @@ export const InputWrap =styled.div`
 display: flex;
 gap: 30px;
 padding-top: 10px;
+@media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
 `
 
 export const BtnHover =styled.div`
@@ -236,6 +254,15 @@ padding-left: 90px;
 `
 
 export const Con1 = styled.div`
+/* display: flex; */
+/* width: 100%;
+height: 100px;
+flex-shrink: 0;
+border: 10px ;
+border-radius: 10px ;
+gap: 10px;
+margin-top: 10px;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
 @media screen and (max-width: 500px) {
     
 
@@ -246,7 +273,7 @@ align-items: center;
 padding-bottom: 50px;
 border: 10px ;
 border-radius: 10px ;
-/* width: 100%; */
+width: 100%; 
 margin-top: 10px;
 box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }

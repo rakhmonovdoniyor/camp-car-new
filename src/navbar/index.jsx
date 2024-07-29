@@ -1,10 +1,14 @@
 import React from 'react'
-import { CamperComponents, CamperIcons, Camperh1, Camperh1Wrap, ConWrap } from '../components/style/styles';
+import { CamperComponents, CamperIcons, Camperh1,
+     Camperh1Wrap, ConWrap } from '../components/style/styles';
 import shop from "../assets/navbar-images/shop-icon.png"
 import account from "../assets/navbar-images/acoount.png"
 import { Link } from 'react-router-dom';
 import SideBar from '../assets/sidebar';
 import { Sidebar1 } from './style';
+import TransitionsModal from '../Signin/log2';
+import SignInComponent from '../Signin/signIn';
+
 
 const Navbar = () => {
   return (
@@ -56,7 +60,8 @@ const Navbar = () => {
         </CamperComponents>
         <CamperIcons>
             <img src={shop} alt="shoop" />
-            <img src={account} alt="" />
+            <TransitionsModal> <img src={account} alt="h" /></TransitionsModal>
+           
             <h3>Eng</h3>
         </CamperIcons>
         

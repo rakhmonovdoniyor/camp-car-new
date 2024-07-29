@@ -75,7 +75,15 @@ justify-content:center;
 text-align:center; 
 flex-direction: column;
 
-
+&:hover {
+        /* background-color: white; */
+        transform: scale(1.02);
+        transition: 0.5s ease;
+        cursor: pointer;
+        /* border: 0.9px solid #006DAB; */
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    }
 
 `
 
@@ -127,5 +135,6 @@ align-items: center;
   justify-content: center;
   align-items: center;
   padding: 50px;
+  /* border: 1px solid red; */
 }
 `

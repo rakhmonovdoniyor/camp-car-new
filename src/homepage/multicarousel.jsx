@@ -53,9 +53,9 @@ export const Multicar = () => {
       
       swipeable={false}
   draggable={false}
-  showDots={true}
+  // showDots={true}
 //   responsive={responsive}
-  ssr={true} // means to render carousel on server-side.
+  // ssr={true} // means to render carousel on server-side.
   infinite={true}
   autoPlay={true}
   autoPlaySpeed={1000}
@@ -65,7 +65,7 @@ export const Multicar = () => {
   containerClass="carousel-container"
   removeArrowOnDeviceType={["tablet", "mobile"]}
 //   deviceType={this.props.deviceType}
-  dotListClass="custom-dot-list-style"
+  // dotListClass="custom-dot-list-style"
   itemClass="carousel-item-padding-40-px"
       
       >

@@ -8,8 +8,9 @@ import navmenu from "../../assets/ic_round-view-list (1).png"
 // import AccordionUsage from './according copy';
 import VMenu from './Vmenu';
 // import ButtonHV from './btn';
-import star from "../../assets/motor-img/bx_bxs-star.png"
 import TemporaryDrawer from '../../filter/filterdrawer';
+import HMenu from './HMenu';
+import ButtonHV from './btn';
 
 const ItemPAge = () => {
     
@@ -18,7 +19,7 @@ const ItemPAge = () => {
   const dataLength = data.length;
 
   console.log("data:", data.length);
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(true)
     
 
   function handleVMenu() {
@@ -28,6 +29,30 @@ const ItemPAge = () => {
       setActive(true )
     }
 
+    const [selectedLabel, setSelectedLabel] = useState([])
+
+const handleCheckBoxChange = (labelName) => {
+const isSelected = selectedLabel.includes(labelName)
+setSelectedLabel(
+  isSelected 
+  ? selectedLabel.filter((itsName) => itsName !== labelName)
+  : [...selectedLabel, labelName]
+)
+}
+
+const filteredData = data.filter(
+(item) => 
+selectedLabel.length === 0 ||
+selectedLabel.includes(item.car.company)||
+selectedLabel.includes(item.car.license)||
+selectedLabel.includes(item.car.people)||
+selectedLabel.includes(item.car.location)
+)
+////////////////////////////
+
+
+ console.log ("filtered data", filteredData)
+   
   return (
     <Item24>
       
@@ -37,7 +62,7 @@ const ItemPAge = () => {
         </LeftSearch>
            <ItemLeft>
            <p>Item</p>
-           <p style={{ color:" #006dab"}}>{dataLength}</p>
+           <p style={{ color:" #006dab"}}>{filteredData.length}</p>
             </ItemLeft>
 
            <ItemRight>
@@ -55,12 +80,13 @@ const ItemPAge = () => {
                         <img src={navmenu} alt="nv-menu" />
                         </Btn2>
                         </BtnWrap>
-                        {/* <>{active ? <VMenu/> :  <ItemPAge/>}</> */}
+                        
            </ItemRight>
         </Item242>
         
 
 
+      {/* twice */}
         <Item242242>
       
 
@@ -72,11 +98,11 @@ const ItemPAge = () => {
            
             <COlumnItemLeft2>
             <p>Item</p>
-            <p style={{ color:" #006dab"}}>{dataLength}</p>
+            <p style={{ color:" #006dab"}}>{filteredData.length}</p>
             </COlumnItemLeft2>
            
            
-            <BtnWrap2 $iconBtn>
+             <BtnWrap2 $iconBtn>
                           <Button2 $iconBtn onClick={handleVMenu}>
                           <img src={menu} alt="menu-h" />
                           </Button2>
@@ -84,6 +110,8 @@ const ItemPAge = () => {
                         <img src={navmenu} alt="nv-menu" />
                         </Button>
             </BtnWrap2>
+           
+           
             </ItemLeft2>
                  
             
@@ -94,51 +122,24 @@ const ItemPAge = () => {
             <INput227227 type="text" placeholder='Select' />
             <INput227 style={{width:60, height: 30, paddingLeft:10}} type="text" placeholder='60' />
             </RightIn2>
-            
-            {/* <BtnWrap2 $iconBtn>
+            {/* <ButtonHV/> */}
+             {/* <BtnWrap2 $iconBtn>
                           <Button2 $iconBtn onClick={handleVMenu}>
                           <img src={menu} alt="menu-h" />
                           </Button2>
                         <Button $iconBtn onClick={handleHMenu}>
                         <img src={navmenu} alt="nv-menu" />
                         </Button>
-            </BtnWrap2> */}
+            </BtnWrap2>  */}
                         
            </ItemRight2>
 
         </Item242242>
       
-    <BigWrap>
-       
+             
+              {/* <HMenu/> */}
 
-      {data.map((value, key) => {
-        return(
-          <Link to={`${value.id}`} style={{textDecoration: "none", color: "black"}}>
-          <div key={key}> 
-          
-          <Camperh6>
-                    <img src={value.car.photo} alt="car-photo" style={{width: 200 , height: 140}} />
-                    <h1>{value.car.name  || "no data" }</h1>
-                    <StarWrap>
-                    <p>{value.car.company  || "no data"}</p>
-                    <StarWrap2><img src={star} alt="startr" /><p>4.5</p></StarWrap2>
-                    {/* <img src={star} alt="startr" /><p>4.5</p> */}
-                    </StarWrap> 
-                    
-                    <h2>{value.car.cost  || "no data"}</h2>
-                    
-                    <BtnWrap>
-                    <Button>Order</Button>
-                    <Button>Compare</Button>
-
-                    </BtnWrap>
-            </Camperh6>
-          </div>
-          </Link>
-        )
-      })}
-     
-    </BigWrap>
+              <>{active ? <VMenu exportedData = {filteredData}/> :  <HMenu exportedData = {filteredData}/>}</>
     </Item24>
   )
 }

@@ -11,11 +11,12 @@ import {
 } from "./vmenuStyle";
 import star from "../../assets/motor-img/bx_bxs-star.png"
 import { Campcar } from "../../data/motordata";
+import { TuningCampcar } from "../../data/datatuning";
 
 // import { StarWrap2 } from "../homeFilter/styled";
 
 const VMenu = () => {
-    const data = Campcar.maindata.slice(0,5);
+    const data = TuningCampcar.maindata.slice(0,5);
     const dataLength = data.length;
   console.log("data:", data.length);
   return (

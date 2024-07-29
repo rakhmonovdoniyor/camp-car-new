@@ -1,4 +1,5 @@
-import * as React from 'react';
+// import * as React from 'react';
+import React, { useState } from 'react'
 import Accordion from '@mui/material/Accordion';
 import AccordionActions from '@mui/material/AccordionActions';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -12,48 +13,57 @@ import { Campcar } from '../../data/motordata';
 import SortButton from './sortfilter';
 
 
-export default function AccordionUsage() {
+export default function AccordionUsage({}) {
+  const data = Campcar.maindata;
+  const dataLength = data.length;
 
   ///////////////////////////////
 ////sidebar
 
-const [filterData, setFilterData] = React.useState("");
-    const data = Campcar.maindata;
-    // const length = data.length;
-    const handleFilter = (e) => {
-       const searchQuerry = e.target.value.toLowerCase();
-        setFilterData(
-          data.filter((campercar) =>
-             campercar.car.name.toLocaleLowerCase().includes(searchQuerry)))
-      
-    
-    };
+const [active, setActive] = useState (true);
 
-    console.log(filterData);
+const handleGridClicked = () => {
+  setActive(true);
+};
 
-//  const [selectedLabel, setSelectedLabel] = React.useState([])
+const handleColumnClicked = () => {
+  setActive(false);
+};
 
-//  const handleCheckBoxChange = (labelName) => {
-//   const isSelected = selectedLabel.includes(labelName)
-//   setSelectedLabel(
-//     isSelected 
-//     ? selectedLabel.filter((itsName) => itsName !== labelName)
-//     : [...selectedLabel, labelName]
-//   )
-//  }
 
-//  const filteredData = data.filter(
-//   (item) => 
-//     setFilterData.length === 0 ||
-//   setFilterData.includes(item.car.name)||
-//   setFilterData.includes(item.car.license)||
-//   setFilterData.includes(item.car.people)||
-//   setFilterData.includes(item.car.location)
-//  )
+///set active of grid and column buttons
+const [view, setView] = React.useState('list');
+
+const handleChange = (event, nextView) => {
+setView(nextView);
+};
+
+
+///////////////////////////////
+////sidebar
+const [selectedLabel, setSelectedLabel] = useState([])
+
+const handleCheckBoxChange = (labelName) => {
+const isSelected = selectedLabel.includes(labelName)
+setSelectedLabel(
+  isSelected 
+  ? selectedLabel.filter((itsName) => itsName !== labelName)
+  : [...selectedLabel, labelName]
+)
+}
+
+const filteredData = data.filter(
+(item) => 
+selectedLabel.length === 0 ||
+selectedLabel.includes(item.car.company)||
+selectedLabel.includes(item.car.license)||
+selectedLabel.includes(item.car.people)||
+selectedLabel.includes(item.car.location)
+)
 ////////////////////////////
+const [showFilteredCompany, setShowFilteredCompany] = useState(true)
 
-  
-  //  console.log ("filtered data", filteredData)
+ console.log ("filtered data", filteredData)
 
 
   return (
@@ -80,9 +90,8 @@ const [filterData, setFilterData] = React.useState("");
 
 </Inputwrap2>
 
-
-
 </Inputwrap>
+
       <Accordion defaultExpanded= {true} style={{boxShadow: 'none', borderBottom: 'none'}} >
       
         <AccordionSummary
@@ -96,7 +105,7 @@ const [filterData, setFilterData] = React.useState("");
         <AccordionDetails>
         <Line></Line>
             <BrandItems style={{paddingTop: 50}}>
-            <InputAll $inputleft type="checkbox"  name="" id="" /> <Allp $inputleft>Aidal</Allp>
+            <FormControlLabel control={<Checkbox />} label="다온티앤티"  onChange={(e) => setShowFilteredCompany(e.target.checked)}/>
             </BrandItems>
 
             <BrandItems>
@@ -121,8 +130,10 @@ const [filterData, setFilterData] = React.useState("");
         <AccordionDetails>
         <Line></Line>
             <BrandItems style={{paddingTop: 50}}>
-             <FormControlLabel control={<Checkbox />} label="Wilderness Wheels+" onChange={() => handleFilter("Wilderness Wheels")}/>
-                {/* <FormControlLabel control={<Checkbox />} label="제일모빌"  onChange={() => handleCheckBoxChange("제일모빌")}/>
+             {/* <FormControlLabel control={<Checkbox />} label="Wilderness Wheels+" onChange={() => handleCheckBoxChange("Wilderness Wheels")}/> */}
+             
+                 <FormControlLabel control={<Checkbox />} label="제일모빌"  onChange={(e) => setShowFilteredCompany(e.target.checked)}/>
+                {/*
                 <FormControlLabel control={<Checkbox />} label="영남캠핑카"  onChange={() => handleCheckBoxChange("영남캠핑카")}/>
                 <FormControlLabel control={<Checkbox />} label="영남캠핑카" onChange={() => handleCheckBoxChange("영남캠핑카")}/>
                 <FormControlLabel control={<Checkbox />} label="한울캠핑카" onChange={() => handleCheckBoxChange("한울캠핑카")}/>
@@ -138,7 +149,7 @@ const [filterData, setFilterData] = React.useState("");
             
 
             <BrandItems>
-             <FormControlLabel control={<Checkbox />} label="제일모빌"  onChange={() => handleFilter("Wilderness Wheels+")}/>
+             <FormControlLabel control={<Checkbox />} label="제일모빌"  onChange={(e) => setShowFilteredCompany(e.target.checked)}/>
 
             </BrandItems>
         </AccordionDetails>
@@ -155,7 +166,7 @@ const [filterData, setFilterData] = React.useState("");
         <AccordionDetails>
         <Line></Line>
             <BrandItems style={{paddingTop: 50}}>
-            <InputAll $inputleft type="checkbox"  name="" id="" /> <Allp $inputleft>1 year</Allp>
+            {/* <InputAll $inputleft type='checkbox' label="Wilderness Wheels+" onChange={() => handleCheckBoxChange("Wilderness Wheels")} /> <Allp $inputleft>1 year</Allp> */}
             </BrandItems>
 
             <BrandItems>
@@ -209,11 +220,11 @@ const [filterData, setFilterData] = React.useState("");
             </BrandItems>
 
             <BrandItems>
-            <InputAll $inputleft type="checkbox" name="" id="" /> <Allp $inputleft>Daegu</Allp>
+            {/* <FormControlLabel control={<Checkbox />} label="Korea" onChange={() => handleCheckBoxChange("Korea")}/> */}
             </BrandItems>
 
             <BrandItems>
-            <InputAll $inputleft type="checkbox" name="" id="" /> <Allp $inputleft>Pusan</Allp>
+            {/* <FormControlLabel control={<Checkbox />} label="Pusan" onChange={() => handleCheckBoxChange("Pusan")}/> */}
 
             </BrandItems>
         </AccordionDetails>

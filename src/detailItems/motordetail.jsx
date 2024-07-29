@@ -10,6 +10,7 @@ import { Campcar } from '../data/motordata'
 import BasicTabs from './tabs/tab'
 import LabTabs from './tabbbb'
 import BasicTabs2 from './tabbbb'
+import TabsComponent from './tabbbb/newtabs'
 // import BasicTabs from './tabs/tab'
 // import { Center } from '../components/campingplace/style'
 
@@ -133,14 +134,16 @@ export const Detail = () => {
 
 
         {/* <BasicTabs/> */}
-        <Basictabs2responsive>
+        {/* <Basictabs2responsive>
         <BasicTabs2/>
-        </Basictabs2responsive>
+        </Basictabs2responsive> */}
+      
        
         </BigCon>
+       
         </BigConWrap>
 
-       
+        <TabsComponent/>
     </div>
   )
 }

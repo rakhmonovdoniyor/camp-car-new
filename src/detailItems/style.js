@@ -30,13 +30,6 @@ align-items: center; */
  justify-content: center;
  align-items: center;
  flex-direction: column;
- @media screen and (max-width: 500px) {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* padding: 50px; */
-}
 
 ` 
 export const DetailCom =styled.div`
@@ -46,12 +39,7 @@ display: flex;
 export const Container = styled.div`
 display: flex;
 padding-top: 20px;
-@media screen and (max-width: 1500px){
 
-
- width: 100%;
-
-}
 @media screen and (max-width: 900px) {
   display: grid;
   flex-direction: column;
@@ -78,33 +66,14 @@ justify-content: center;
 height: 381px;
 /* padding-right: 20px; */
 } 
-@media screen and (max-width: 900px) {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-   */
-  /* padding: 100px; */
-}
-@media screen and (max-width: 500px) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  padding-left: 100px;
-}
 `
 export const Data = styled.div`
 display: flex;
 flex: 2;
 flex-direction: column;
 /* border: 1px solid blue; */
-@media screen and (max-width: 500px) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 310px;
-  width:500px;
-}
+
 `
 
 export const DataWrapperbox =styled.div`
@@ -115,23 +84,7 @@ background: #FFF;
 
 /* btn sh */
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
-@media screen and (max-width: 900px) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 
-  /* padding: 100px; */
-}
-@media screen and (max-width: 500px) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* padding-left: 100px; */
-  /* flex-direction: column; */
-  /* padding: 100px; */
-
-}
 `
 export const Data1 = styled.div`
 
@@ -197,27 +150,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 /* box-shadow: 0px 0px 10px 0px rgba(5, 0, 0, 0.4); */
-@media screen and (max-width: 900px) {
-  display: flex;
-  flex-direction: column;
-  /* padding-bottom:50px;
-  gap: 30px;
-  padding: 50px; */
-  
-  
-}
-@media screen and (max-width: 500px) {
-  display: grid;
-  /* flex-direction: column; */
-  justify-content: center;
-  /* align-items: center; */
-  grid-template-rows: repeat(1, 1fr);
-  /* gap: 30px; */
-  /* padding: 50px; */
-  padding-left: 60px;
-  
-  
-}
+
 `
 
 export const ComfortText = styled.div`
@@ -241,49 +174,19 @@ h1{
 display: flex;
 text-align: center;
 }
-@media screen and (max-width: 900px) {
-  display: flex;
-  flex-direction: column;
-  /* padding-left: 100px; */
 
-/* justify-content: center; */
-/* align-items: center; */
-}
-@media screen and (max-width: 500px) {
-  display: flex;
-  flex-direction: column;
-/* justify-content: center; */
-align-items: center;
-/* padding: 50px 50px; */
-  /* flex: 1; */
-  /* width: 400px; */
-}
 `
 export const PWRap = styled.div`
 /* display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column; */
-@media screen and (min-width: 500px) {
-  display: flex;
-  width: 533px;
-height: 169px;
-flex-shrink: 0; 
 
-}
+
 
 
 /* padding: 100px; */
-@media screen and (max-width: 500px) {
-  display: flex;
-  /* flex-direction: column; */
-justify-content: center;
-align-items: center;
-margin-top:  50px;
-padding-left:150px ;
-padding-right: 50px;
 
-}
 `
 
 export const ComfortPhoto = styled.div`
@@ -292,21 +195,7 @@ flex: 1;
 img{
     width: 600px;
 }
-@media screen and (max-width: 900px) {
-  display: none;
-  justify-content: center;
-  /* align-items: center; */
-  width: 100%;
-  
-}
-@media screen and (max-width: 500px) {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%
-  
-  
-}
+
 `
 
 export const BTnWrap= styled.div`
@@ -319,10 +208,7 @@ padding: 50px 0;
    
   }
 /* justify-content: space-evenly; */
-@media screen and (max-width: 500px) {
-  display: flex;
-  margin-top: 50px;
-}
+
 `
 
 export const DetailButton = styled.button`
@@ -384,18 +270,7 @@ export const Basictabs2responsive =styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-@media screen and (max-width: 900px){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-@media screen and (max-width: 500px){
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    }
 `
 export const CmfPhoto24 =styled.div`
 

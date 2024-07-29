@@ -8,15 +8,15 @@ display: flex;
 export const BoxWRapper =styled.div`
 display: flex;
 gap: 50px;
-@media screen and (max-width: 900px){
+/* @media screen and (max-width: 900px){
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+} */
 @media screen and (max-width: 500px){
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 }
@@ -31,6 +31,11 @@ flex-direction: column;
 /* padding-left: 50px; */
 gap: 10px;
 /* width: 400px; */
+@media screen and (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    
+}
 `
 
 export const Box2 =styled.div`
@@ -116,7 +121,7 @@ gap: 12px;
 /* padding-left: 50px; */
 /* border-radius: 20px; */
 align-items: center; 
-justify-content: center;
+/* justify-content: center; */
 @media screen and (max-width: 500px)  {
     display: flex;
     justify-content: center;

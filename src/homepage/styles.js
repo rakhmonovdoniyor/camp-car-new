@@ -98,7 +98,7 @@ export const RecommendInfoWrapper = styled.div`
 export const RecommendBoxText = styled.div`
   color: var(--text, #373737);
   text-align: center;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -118,7 +118,7 @@ export const RecommendBoxText = styled.div`
 //   padding: 10px 34px;
 // p{
 //   color: #fff;
-//   font-family: Montserrat;
+//   font-family: 'Montserrat';
 //   font-size: 18px;
 //   font-style: normal;
 //   font-weight: 700;
@@ -257,7 +257,7 @@ export const BlogsInfoWrapper = styled.div`
   padding-right: 33px;
   h1 {
     color: #000;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
@@ -268,7 +268,7 @@ export const BlogsInfoWrapper = styled.div`
 export const BlogText = styled.p`
   max-width: 400px;
   color: ${(props) => (props.$colorOrange ? `#FF7A00` : `#000`)};
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: ${(props) => (props.$Size18 ? `18px` : `16px`)};
   font-style: normal;
   font-weight: 400;
@@ -284,10 +284,14 @@ export const BlogsImgWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+
   :hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 15px;
+    transform: scale(1.02);
+        transition: 0.5s ease;
+        cursor: pointer;
+        /* border: 0.9px solid #006DAB; */
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   }
   img {
     width: 100%;

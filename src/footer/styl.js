@@ -25,14 +25,19 @@ flex: 2;
 justify-content: center; */
 padding: 50px;
 color: white;
+
 h1{
-    
+    cursor: pointer;
     color: white;
 font-family: "Montserrat";
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+
+}
+:hover{
+    color: yellow;
 }
 `
 
@@ -43,8 +48,10 @@ flex-direction: column;
 color: white;
 h1{
     padding: 50px 0;
+    cursor: pointer;
 }
 p{
+    cursor: pointer;
     padding: 10px 0;
     color: #FFF;
 font-family: "Montserrat";
@@ -53,6 +60,10 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+:hover{
+    color: yellow;
+}
+
 
 @media screen and (max-width: 900px){
     display: none;
@@ -66,6 +77,7 @@ flex-direction: column;
 color: white;
 h1{
     padding: 50px 0;
+    cursor: pointer;
 }
 p{
     padding: 10px 0;
@@ -75,17 +87,22 @@ font-size: 14px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+cursor: pointer;
 }
 @media screen and (max-width: 900px){
     display: none;
 }
+:hover{
+    color: yellow;
+}
+
 `
 export const ConWrap4 = styled.div`
 display: flex;
 flex: 2;
 flex-direction: column;
 color: #FFF;
-
+cursor:pointer;
 h1{
     padding: 50px 0;
     @media screen and (max-width: 900px){
@@ -103,6 +120,9 @@ line-height: normal;
 @media screen and (max-width: 900px){
     display: none;
 }
+}
+:hover{
+    color: yellow;
 }
 `
 export const Svg= styled.div`
@@ -126,6 +146,9 @@ height: 25.429px; */
   justify-content: center;
   /* align-items: center; */
   padding-top: 50px;
+}
+:hover{
+    color: yellow;
 }
 `
 

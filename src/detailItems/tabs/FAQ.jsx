@@ -14,7 +14,7 @@ export default function AccordionUsage() {
       <Flex1  >
 
       
-      <Accordion style={{width: 600  }}>
+      <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
@@ -28,7 +28,7 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion style={{width: 600 }}>
+      <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
@@ -42,7 +42,7 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion style={{width: 600 }}>
+      <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
@@ -56,7 +56,7 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion style={{width: 600 }}>
+      <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel4-content"
@@ -70,7 +70,7 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion style={{width: 600 }}>
+      <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel5-content"
@@ -84,7 +84,7 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion style={{width: 600 }}>
+      <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel6-content"

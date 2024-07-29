@@ -46,7 +46,7 @@ const HomeComponent = () => {
   }, []);
   return (
     <div>
-      <div id="map" className="map" style={{ width: 650, height: 300 }} />
+      <div id="map" className="map"  />
       <p></p>
      
     </div>

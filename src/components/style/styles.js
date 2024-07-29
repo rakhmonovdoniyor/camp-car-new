@@ -18,7 +18,8 @@ position: fixed;
 width: 100%;
 z-index: 1100;
 box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.10);
-@media only screen and (max-width: 600px){
+/* margin-bottom: 80px; */
+@media only screen and (max-width: 500px){
    padding: 15px 30px;
 }
 
@@ -116,6 +117,7 @@ flex-direction: column;
 
 `
 export const BgWrap=styled.div`
+padding-top: 80px;
 background-image: ${(props) => {
     if (props.$home) {
       return `url(${backrasm})`;
@@ -176,17 +178,17 @@ line-height: normal;
 @media screen and (max-width: 500px){
  
  width:100%;
-  background-position:center;
+  /* background-position:center;
  width:auto;
- height:auto;
+ height:auto; */
   
 }
 
 @media screen and (max-width: 900px){
   
-  width:auto;
+  /* width:auto;
  height:auto;
- background-position:center; 
+ background-position:center;  */
   
 }
 `

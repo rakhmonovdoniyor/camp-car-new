@@ -34,6 +34,7 @@ import place8 from "../../assets/campingplace/image 11.png";
 import place9 from "../../assets/campingplace/image 11.png";
 import MapCom from "./kakaomap";
 import { CampingPlaces } from "./data";
+import { BoxWrap } from "./style";
 
 const CampingPlaceInfoComponent = () => {
   //multi carousel
@@ -198,17 +199,13 @@ const CampingPlaceInfoComponent = () => {
         <CampPlaceName>{resultData.car.name}</CampPlaceName>
         <CampPlaceLocation>
           {resultData.car.desc.location}
-          <Button
-            size="small"
-            sx={{
-              height: "25px",
-              width: "120px",
-              border: "1px solid  #FF7A00",
-              color: "#FF7A00",
-            }}
+          <BoxWrap>
+          <button
           >
             Copy map
-          </Button>
+          </button>
+          </BoxWrap>
+         
         </CampPlaceLocation>
         <DividerWrapper></DividerWrapper>
 

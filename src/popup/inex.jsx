@@ -6,7 +6,7 @@ import { Popimg } from '../homepage/style';
 
 export const PopUp = () => (
     
-  <Popup arrowStyle={{borderRadius: '20px'}}
+  <Popup arrowStyle={{borderRadius: 20}} 
     trigger={<Popimg className="button"> <PlayCircleOutlineIcon sx={{backgroundColor: 'transparent', width: 50, height: 50 , color: 'whitesmoke' , cursor: 'pointer', borderRadius: '10px'}}/>  </Popimg>}
     modal
     nested 
