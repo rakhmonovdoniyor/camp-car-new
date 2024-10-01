@@ -180,7 +180,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "4",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class B Motorhome",
         location: "Pusan" ,
         license: "Class C License",
         desc: {
@@ -234,7 +234,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "5",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class B Motorhome",
         location: "Pusan" ,
         license: "Class D License",
         desc: {
@@ -261,7 +261,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "6",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class B Motorhome",
         location: "Seoul" ,
         license: "Class C License",
         desc: {
@@ -288,7 +288,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "4",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class C Motorhome",
         location: "Seoul" ,
         license: "Class D License",
         desc: {
@@ -369,7 +369,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "5",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class C Motorhome",
         location: "Seoul" ,
         license: "Class B License",
         desc: {
@@ -450,7 +450,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "6",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class C Motorhome",
         location: "Pusan" ,
         license: "Class C License",
         desc: {
@@ -504,7 +504,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "4",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class C Motorhome",
         location: "Seoul" ,
         license: "Class C License",
         desc: {
@@ -586,7 +586,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "4",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class C Motorhome",
         location: "Daegu" ,
         license: "Class C License",
         desc: {
@@ -613,7 +613,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "4",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class B Motorhome",
         location: "Daegu" ,
         license: "Class C License",
         desc: {
@@ -670,7 +670,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "7",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class B Motorhome",
         location: "Jeju" ,
         license: "Class C License",
       
@@ -727,7 +727,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "5",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class B Motorhome",
         location: "Jeju" ,
         license: "Class D License",
         desc: {
@@ -781,7 +781,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "5",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class C Motorhome",
         location: "Seoul" ,
         license: "Class C License",
         desc: {
@@ -835,7 +835,7 @@ export const CaravanCampcar = {
         view: "234" ,
         people: "4",
         date: "22/03/24월",
-         type: "Class A Motorhome",
+         type: "Class B Motorhome",
         location: "Jeju" ,
         license: "Class C License",
         desc: {

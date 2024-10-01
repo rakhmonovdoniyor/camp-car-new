@@ -237,7 +237,7 @@ export const TuningCampcar = {
         name: "DS9eR+a",
         cost: "77,900,000",
         type: "봉고",
-        license: "2종 보통",
+        license: "3종 보통",
         people: "6인",
         date: "22년 03월",
         company: "제일모빌",
@@ -321,7 +321,7 @@ export const TuningCampcar = {
         name: "ACIER 900 Deluxe",
         cost: "142,800,000",
         type: "이베코 뉴데일리",
-        license: "1종 보통",
+        license: "3종 보통",
         people: "6인",
         date: "22년 03월",
         company: "제일모빌",
@@ -353,7 +353,7 @@ export const TuningCampcar = {
         people: "5인",
         date: "22년 03월",
         company: "스타모빌",
-        location: " 경상권",
+        location: "Daegu",
         view: "234" ,
       
         desc: {
@@ -405,7 +405,7 @@ export const TuningCampcar = {
         name: "트레블라인 550",
         cost: "60,000,000",
         type: "르노마스터",
-        license: "1종 보통",
+        license: "3종 보통",
         people: "3인",
         date: "22년 03월",
         company: "영남캠핑카",
@@ -605,7 +605,7 @@ export const TuningCampcar = {
         people: "3인",
         date: "22년 03월",
         company: "한울캠핑카",
-        location: "경상권",
+        location: "Seoul",
         view: "234" ,
       
         desc: {
@@ -633,7 +633,7 @@ export const TuningCampcar = {
         people: "5인",
         date: "22년 03월",
         company: "한울캠핑카",
-        location: "경상권",
+        location: "Seoul",
         view: "234" ,
       
         desc: {
@@ -661,7 +661,7 @@ export const TuningCampcar = {
         people: "6인",
         date: "22년 03월",
         company: "한울캠핑카",
-        location: "경상권",
+        location: "Seoul",
         view: "234" ,
       
         desc: {
@@ -689,7 +689,7 @@ export const TuningCampcar = {
         people: "5인",
         date: "22년 03월",
         company: "훼미리캠핑카",
-        location: "경상권",
+        location: "Daegu",
         view: "234" ,
       
         desc: {

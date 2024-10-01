@@ -23,6 +23,8 @@ import Motodetail from './detailItems/motodetail';
 import Register from './Signin/register';
 import UsedDetail from './detailItems/useddetail';
 import TuningDetail from './detailItems/tuningdetail';
+import CartComponent from './components/cart/cart';
+import CompareComponent from './components/compare/compare';
 // import { Register } from './Signin/register';
 // import CreateAccountComponent from './Signin/create';
 
@@ -39,6 +41,8 @@ root.render(
     <Route path='/tuning' element={<TuningPage/> } />
     <Route path='/used-car' element={<UsedCarPage/> } />
     <Route path='/camping-place' element={<CampingPlace/> } />
+    <Route path='/cart' element ={< CartComponent/>}/>
+    <Route path='/compare' element ={<CompareComponent/>}/>
     <Route path='/motor/:id' element = {<Motodetail/>}/>
     <Route path='/caravan/:id' element = {<DetailCaravan/>}/>
     <Route path='/used-car/:id' element = {<UsedDetail/>}/>

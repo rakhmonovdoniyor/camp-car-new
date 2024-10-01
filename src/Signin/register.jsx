@@ -6,7 +6,7 @@ import { Paper } from '@mui/material';
 import ClearIcon from "@mui/icons-material/Clear";
 import { useNavigate } from 'react-router-dom';
 import { CheckBox } from '@mui/icons-material';
-// import { Input } from '@mui/material';
+
 
 export default  function Register()  {
   const navigate = useNavigate();
